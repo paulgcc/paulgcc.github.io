@@ -104,12 +104,16 @@
         .hero-image {
             width: 100%;
             height: 300px;
-            background-color: #ddd;
             margin: 20px 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
         }
         
         /* Features Section */
@@ -201,7 +205,7 @@
                 <h1>Welcome to Gosford Community Club</h1>
                 <p>A vibrant space for the Central Coast community opening mid-2025.</p>
                 <div class="hero-image">
-                    <img src="images/hero-image.jpg" alt="Gosford Community Club" width="100%" height="auto">
+                    <img src="images/hero-image.jpg" alt="Gosford Community Club">
                 </div>
                 <a href="membership.html" class="btn">Become a Member</a>
             </section>
