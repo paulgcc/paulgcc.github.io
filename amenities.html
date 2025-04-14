@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amenities - Gosford Community Club</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #2c5e86;
+            color: white;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        /* Navigation Styles */
+        nav {
+            background-color: #1d4e75;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav li {
+            padding: 0;
+        }
+        
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #3a7ca5;
+        }
+        
+        nav a.active {
+            background-color: #3a7ca5;
+            font-weight: bold;
+        }
+        
+        /* Main Content Styles */
+        main {
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            min-height: 400px;
+        }
+        
+        h1, h2, h3 {
+            color: #2c5e86;
+        }
+        
+        /* Page Header */
+        .page-header {
+            background-color: #e8f4fc;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        /* Amenities Styles */
+        .amenities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .amenity-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .amenity-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .amenity-image {
+            height: 200px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .amenity-content {
+            padding: 20px;
+        }
+        
+        .amenity-content h3 {
+            margin-top: 0;
+        }
+        
+        /* Section styles */
+        .intro-section {
+            margin-bottom: 40px;
+        }
+        
+        .additional-info {
+            background-color: #f9f9f9;
+            padding: 30px;
+            margin: 40px 0;
+            border-radius: 5px;
+        }
+        
+        /* Button Styles */
+        .btn {
+            display: inline-block;
+            background-color: #2c5e86;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+        
+        .btn:hover {
+            background-color: #1d4e75;
+        }
+        
+        /* Footer Styles */
+        footer {
+            background-color: #2c5e86;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        footer a {
+            color: #b3d7ff;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            
+            .amenities-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Gosford Community Club</div>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="amenities.html" class="active">Amenities</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <main>
+            <section class="page-header">
+                <h1>Club Amenities</h1>
+                <p>Discover the facilities and services available at Gosford Community Club</p>
+            </section>
+            
+            <section class="intro-section">
+                <h2>World-Class Facilities for Our Community</h2>
+                <p>At Gosford Community Club, we're proud to offer a range of modern facilities designed to enhance your experience as a member. Whether you're looking to socialize, relax, or host an event, our amenities are designed with your comfort and enjoyment in mind.</p>
+            </section>
+            
+            <section class="amenities-grid">
+                <div class="amenity-card">
+                    <div class="amenity-image">[IMAGE PLACEHOLDER]</div>
+                    <div class="amenity-content">
+                        <h3>Bistro & Dining</h3>
+                        <p>Our bistro offers a range of delicious meals at affordable prices. From casual lunches to evening dining, our menu features locally-sourced ingredients and caters to various dietary requirements.</p>
+                        <p><strong>Hours:</strong> Lunch 11:30am-2:30pm, Dinner 5:30pm-9:00pm</p>
+                    </div>
+                </div>
+                
+                <div class="amenity-card">
+                    <div class="amenity-image">[IMAGE PLACEHOLDER]</div>
+                    <div class="amenity-content">
+                        <h3>Sports Bar</h3>
+                        <p>Watch all your favorite sporting events on our large screens while enjoying a drink with friends. With multiple screens throughout, you'll never miss a moment of the action.</p>
+                        <p><strong>Features:</strong> Multiple screens, comfortable seating, full bar service</p>
+                    </div>
+                </div>
+                
+                <div class="amenity-card">
+                    <div class="amenity-image">[IMAGE PLACEHOLDER]</div>
+                    <div class="amenity-content">
+                        <h3>Function Room</h3>
+                        <p>Our versatile function room is perfect for celebrations, meetings, and community events. With modern audio-visual equipment and flexible catering options, we can accommodate events of various sizes.</p>
+                        <p><strong>Capacity:</strong> Up to 150 guests</p>
+                    </div>
+                </div>
+                
+                <div class="amenity-card">
+                    <div class="amenity-image">[IMAGE PLACEHOLDER]</div>
+                    <div class="amenity-content">
+                        <h3>Lounge Area</h3>
+                        <p>Relax in our comfortable lounge area, perfect for casual meetings or catching up with friends. With complimentary Wi-Fi and coffee service available, it's a great space to unwind.</p>
+                        <p><strong>Features:</strong> Comfortable seating, complimentary Wi-Fi, coffee service</p>
+                    </div>
+                </div>
+                
+                <div class="amenity-card">
+                    <div class="amenity-image">[IMAGE PLACEHOLDER]</div>
+                    <div class="amenity-content">
+                        <h3>Games Area</h3>
+                        <p>Enjoy a range of recreational activities including billiards, darts, and board games in our dedicated games area. Perfect for friendly competition and social interaction.</p>
+                        <p><strong>Games available:</strong> Billiards, darts, board games, card tables</p>
+                    </div>
+                </div>
+                
+                <div class="amenity-card">
+                    <div class="amenity-image">[IMAGE PLACEHOLDER]</div>
+                    <div class="amenity-content">
+                        <h3>Community Garden</h3>
+                        <p>Our outdoor community garden provides a peaceful space to relax and connect with nature. Members are welcome to participate in gardening activities or simply enjoy the surroundings.</p>
+                        <p><strong>Features:</strong> Seating areas, native plants, vegetable garden</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="additional-info">
+                <h2>Additional Services</h2>
+                <ul>
+                    <li><strong>Free Parking:</strong> Ample parking spaces available for members and guests</li>
+                    <li><strong>Wi-Fi:</strong> Complimentary high-speed internet throughout the club</li>
+                    <li><strong>Accessibility:</strong> Fully accessible facilities for people with disabilities</li>
+                    <li><strong>Community Noticeboard:</strong> Stay updated with local events and announcements</li>
+                    <li><strong>Member Rewards:</strong> Special discounts and promotions for club members</li>
+                </ul>
+                
+                <h3>Coming Soon</h3>
+                <p>We're constantly working to improve our facilities. Stay tuned for these upcoming additions:</p>
+                <ul>
+                    <li>Outdoor entertainment area</li>
+                    <li>Children's play space</li>
+                    <li>Community workshop space</li>
+                </ul>
+                
+                <a href="membership.html" class="btn">Become a Member Today</a>
+            </section>
+        </main>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Gosford Community Club. All rights reserved.</p>
+            <p>Opening mid-2025 on the Central Coast, NSW.</p>
+        </div>
+    </footer>
+</body>
+</html>
